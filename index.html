@@ -13,71 +13,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
         <nav id="navbar-a" class="navbar navbar-expand-lg fixed-top px-3 mb-3">
-    <div class="container-fluid d-flex">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="nav-pil" class="nav mx-auto"> <!-- Menggunakan class mx-auto untuk membuat tautan di tengah secara horizontal -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#deskripsi">Deskripsi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pendidikan">Pendidikan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#project">Project</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontak">Kontak</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+            <div class="container-fluid d-flex">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="nav-pil" class="nav mx-auto"> <!-- Menggunakan class mx-auto untuk membuat tautan di tengah secara horizontal -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deskripsi">Deskripsi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pendidikan">Pendidikan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <section id="home">
            <section class="hero carousel-hero">
             <div id="homeHerocarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#homeHerocarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#homeHerocarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#homeHerocarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-
+                <!-- Isi Carousel -->
                 <div class="carousel-inner h-100">
-                    
-                    <div class="carousel-item active " style="background-image: url('img/carousel1.jpg');">
-                    <div class="row">
-                        <div class="my-auto">
-                        <h1 id="c1-h1"  class="hero-headline white hero-h1"></h1>
-                        <h3 id="c1-h3" class="hero-subhead white"></h3>
+                    <div class="carousel-item active" style="background-image: url('img/carousel1.jpg');">
+                        <div class="row">
+                            <div class="my-auto">
+                                <h1 id="c1-h1" class="hero-headline white hero-h1"></h1>
+                                <h3 id="c1-h3" class="hero-subhead white"></h3>
+                            </div>
                         </div>
-                    </div><!-- close row -->
-                    </div> <!-- close item -->
-
-                    <div class="carousel-item " style="background-image: url('img/carousel2.jpg')">
-                    <div class="my-auto ">
-                        <h1 id="c2-h1" class="hero-headline white hero-h1"></h1>
-                        <h3 id="c2-h3" class="hero-subhead white"></h3>
                     </div>
-                    </div> <!-- close item -->
 
-                    <div class="carousel-item " style="background-image: url('img/carousel3.jpg')">
-                    <div class="my-auto ">
-                        <h1 id="c3-h1" class="hero-headline white hero-h1"></h1>
-                        <h3 id="c3-h3" class="hero-subhead white"></h3>
+                    <div class="carousel-item" style="background-image: url('img/carousel2.jpg')">
+                        <div class="my-auto ">
+                            <h1 id="c2-h1" class="hero-headline white hero-h1"></h1>
+                            <h3 id="c2-h3" class="hero-subhead white"></h3>
+                        </div>
                     </div>
-                    </div> <!-- close item -->
 
-                </div> <!-- close inner -->
+                    <div class="carousel-item" style="background-image: url('img/carousel3.jpg')">
+                        <div class="my-auto ">
+                            <h1 id="c3-h1" class="hero-headline white hero-h1"></h1>
+                            <h3 id="c3-h3" class="hero-subhead white"></h3>
+                        </div>
+                    </div>
+                </div>
                 
+                <!-- Tombol Navigasi Carousel -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#homeHerocarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" style="opacity: 0;" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -86,14 +83,16 @@
                     <span class="carousel-control-next-icon" style="opacity: 0;" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-                </div>  
-
-            </section>
+            </div>
+        </section>
         </section>
 
-        <section id="deskripsi">
-        <h4>Deskripsi heading</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque praesentium aspernatur neque repellendus reiciendis ipsum eos eum minus illum natus amet dolorem, labore repellat. Laboriosam eos magnam voluptates voluptas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam repellat dolorem architecto ut blanditiis incidunt nobis, fugiat ipsam beatae earum et nihil nostrum odio consequatur inventore alias consectetur atque!Loremlorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum? Quisquam distinctio aperiam repudiandae, suscipit, tempore asperiores perspiciatis minima, molestias quasi harum debitis quidem provident qui consectetur cumque velit hic!000</p>
+       <section id="deskripsi" data-aos-duration="1000" data-aos="fade-up" style="margin-top: 10%;">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <center><h2>Tentang Saya <i class="icofont icofont-personal"></i></h2></center>
+                </div>
         </section>  
         <section id="pendidikan">
             <h4>Third heading</h4>
@@ -163,11 +162,34 @@
         });
     });
 </script>
-  <script>
+<script>
     var typed = new Typed('#c1-h1', {
       strings: ['<i>Halo, saya <b>Maeru Bagas Trisoko</b></i> <br> Junior Programmer'],
       typeSpeed: 40,
     });
     
   </script>
+<script>
+    $('#homeHerocarousel').on('slid.bs.carousel', function () {
+        var activeId = $('.carousel-item.active').find('h1').attr('id');
+        var text = '';
+
+        // Tentukan teks yang akan muncul sesuai dengan ID h1 pada setiap carousel
+        if (activeId === 'c1-h1') {
+            text = '<i>Halo, saya <b>Maeru Bagas Trisoko</b></i> <br> Junior Programmer';
+        } else if (activeId === 'c2-h1') {
+            text = '<i>Saya suka</i>';
+        } else if (activeId === 'c3-h1') {
+            text = 'Teks untuk carousel ketiga';
+        }
+
+        var typed = new Typed('#' + activeId, {
+            strings: [text],
+            typeSpeed: 40,
+        });
+    });
+</script>
+    <script>
+        AOS.init();
+    </script>
 </html>
