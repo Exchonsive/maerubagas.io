@@ -1,5 +1,4 @@
 body {
-  font-family: "Open Sans", sans-serif;
 }
 .navbar-toggler {
   border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
@@ -99,5 +98,6 @@ body {
 }
 
 .p_tentangsaya {
+  text-align: center;
   margin-top: 3%;
 }
