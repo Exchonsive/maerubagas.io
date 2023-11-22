@@ -1,5 +1,6 @@
 body {
 }
+
 .navbar-toggler {
   border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
 }
@@ -51,6 +52,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
 }
 @media (max-width: 768px) {
   .carousel-hero .carousel-item {
@@ -97,7 +101,27 @@ body {
   }
 }
 
-.p_tentangsaya {
-  text-align: center;
-  margin-top: 3%;
+.title {
+  text-align: left;
+  font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+}
+.subtitle {
+  text-align: left;
+  font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (1200 - 320)));
+  opacity: 0.8;
+}
+
+p {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+  margin-bottom: 12px;
+  letter-spacing: 0.6px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 5px;
 }
