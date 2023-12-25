@@ -1,4 +1,6 @@
-
+h1{
+  font-family: 'Exo', sans-serif;
+}
 
 .navbar-toggler {
   border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
@@ -81,7 +83,7 @@
 }
 
 .hero-h1 {
-  margin-top: 15%;
+  margin-top: 18%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,6 +99,17 @@
 @media only screen and (max-width: 600px) {
   #deskripsi {
     margin-top: 20%;
+  }
+}
+
+.img-thumbnail{
+  border: none;
+}
+
+@media only screen and (max-width: 765px) {
+  .img-thumbnail {
+    max-width: 250px;
+    margin-top: -10%;
   }
 }
 
@@ -183,3 +196,24 @@ footer {
   background-color: #718493;
   color: white;
 }
+
+.portofolio{
+
+}
+
+.image_portofolio{
+  border-radius: 7px;
+  max-width: 100%;
+  filter: blur(0) brightness(100%); /* Set filter awal tanpa blur */
+  transform: scale(1);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+.image_portofolio:hover {
+  filter: blur(3px) brightness(55%);/* Apply blur and grayscale on hover */
+  transform: scale(1.1);
+}
+#laundrymae{
+  
+  
+}
+
