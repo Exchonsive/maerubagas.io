@@ -104,6 +104,7 @@ h1{
 
 .img-thumbnail{
   border: none;
+  border-radius: 5%;
 }
 
 @media only screen and (max-width: 765px) {
@@ -197,23 +198,39 @@ footer {
   color: white;
 }
 
-.portofolio{
-
+.overlay {
+  position: relative;
+  overflow: hidden;
 }
 
-.image_portofolio{
+.image_portofolio {
   border-radius: 7px;
   max-width: 100%;
-  filter: blur(0) brightness(100%); /* Set filter awal tanpa blur */
+  filter: blur(0) brightness(100%);
   transform: scale(1);
   transition: filter 0.5s ease, transform 0.5s ease;
 }
-.image_portofolio:hover {
-  filter: blur(3px) brightness(55%);/* Apply blur and grayscale on hover */
+
+.overlay:hover .image_portofolio {
+  filter: blur(3px) brightness(55%);
   transform: scale(1.1);
 }
-#laundrymae{
-  
-  
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
+
+.overlay:hover .overlay-text {
+  opacity: 1;
+}
+
 
