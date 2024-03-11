@@ -3,7 +3,8 @@ h1{
 }
 
 .navbar-toggler {
-  border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
+  border: var(--bs-border-width) solid rgba(0, 0, 0, 0);
+  color: #00000000;
 }
 
 .navbar-toggler-icon {
