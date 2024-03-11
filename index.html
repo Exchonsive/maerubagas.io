@@ -246,23 +246,6 @@
             <div class="row portofolio">
                 <div class="col-12 col-sm-12 col-md-6 mb-5">
                     <div class="overlay">
-                        <a href="https://laundrymaee.000webhostapp.com/login.php" target="_blank">
-                            <img src="img/laundrymae.jpg" class="image_portofolio" id="laundrymae">
-                            <p class="overlay-text">
-                                <b>Laundrymae</b> <br> <br>Aplikasi Laundry yang menyediakan fitur transaksi laundry,
-                                pencetakan struk, laporan data laundry, manajemen barang,
-                                pembelian
-                                dan pemakaian barang, serta informasi tentang supplier dan konsumen.
-                                <br><br>
-                                klik untuk membuka <i class="fa-solid fa-arrow-up-right-from-square"></i><br>
-                                username & password : admin <br>
-
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 mb-5">
-                    <div class="overlay">
                         <a href="https://mygra.000webhostapp.com/login.php" target="_blank">
                             <img src="img/mygra.jpg" class="image_portofolio" id="mygra">
                             <p class="overlay-text">
@@ -273,6 +256,23 @@
                                 penggunaan kertas dan alat tulis.
                                 <br><br>
                                 klik untuk membuka <i class="fa-solid fa-arrow-up-right-from-square"></i><br>
+
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 mb-5">
+                    <div class="overlay">
+                        <a href="https://laundrymaee.000webhostapp.com/login.php" target="_blank">
+                            <img src="img/laundrymae.jpg" class="image_portofolio" id="laundrymae">
+                            <p class="overlay-text">
+                                <b>Laundrymae</b> <br> <br>Aplikasi Laundry yang menyediakan fitur transaksi laundry,
+                                pencetakan struk, laporan data laundry, manajemen barang,
+                                pembelian
+                                dan pemakaian barang, serta informasi tentang supplier dan konsumen.
+                                <br><br>
+                                klik untuk membuka <i class="fa-solid fa-arrow-up-right-from-square"></i><br>
+                                username & password : admin <br>
 
                             </p>
                         </a>
@@ -313,19 +313,68 @@
             </div>
         </div>
     </section>
-    <section id="kontak">
-        <h4></h4>
-        <p></p>
+    <br><br><br>
+    <section id="kontak" style="background-color: #273036; padding: 50px 0; border-radius: 7px 7px 0 0;">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 style="color: white; margin-bottom: 20px;">Kontak</h3>
+
+                    <p style="color: white; font-size: 18px;">Email: <a href="mailto:maerubagas14@gmail.com"
+                            style="color: white; text-decoration: none;">maerubagas14@gmail.com</a></p>
+                    <p style="color: white; font-size: 18px;">Telepon: <a href="tel:+628982818631"
+                            style="color: white; text-decoration: none;">+62 898-2818-631</a></p>
+                    <br><br>
+                    <h3 style="color: white; margin-bottom: 20px;">Social Media</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/maerubagastrisoko/"
+                                style="color: white; font-size: 18px; text-decoration: none;"><i
+                                    class="fab fa-linkedin-in"></i>
+                                LinkedIn</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/mae.trisoko/"
+                                style="color: white; font-size: 18px; text-decoration: none;"><i
+                                    class="fab fa-instagram"></i>
+                                Instagram</a>
+                        </li>
+                        <li><a href="https://www.tiktok.com/@codeexc"
+                                style="color: white; font-size: 18px; text-decoration: none;"><i
+                                    class="fab fa-tiktok"></i>
+                                Tiktok</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/@codeexc"
+                                style="color: white; font-size: 18px; text-decoration: none;"><i
+                                    class="fab fa-youtube"></i>
+                                Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <h3 style="color: white;margin-bottom: 20px;">WhatsApp</h3>
+                    <form id="whatsappForm">
+                        <div class="form-group">
+                            <label for="whatsappMessage" style="color: white;">Pesan WhatsApp:</label>
+                            <textarea class="form-control" id="whatsappMessage" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="sendMessage()">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
+
     </div>
 
 </body>
-<footer>
+<!-- <footer>
     <div class="content-wrapper">
         <h2 class="centered-text">Dalam proses develop</h2>
         <div class="spinner"></div>
     </div>
-</footer>
+</footer> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
@@ -375,7 +424,6 @@
         var activeId = $('.carousel-item.active').find('h1').attr('id');
         var text = '';
 
-        // Tentukan teks yang akan muncul sesuai dengan ID h1 pada setiap carousel
         if (activeId === 'c1-h1') {
             text = '<i>Halo, saya <b>Maeru Bagas Trisoko</b></i> <br>';
         } else if (activeId === 'c2-h1') {
@@ -392,6 +440,14 @@
 </script>
 <script>
     AOS.init();
+</script>
+<script>
+    function sendMessage() {
+        var message = document.getElementById('whatsappMessage').value;
+        var phone = '+628982818631';
+        var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
+        window.open(whatsappUrl, '_blank');
+    }
 </script>
 
 </html>
