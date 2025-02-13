@@ -58,6 +58,10 @@
                         <a class="nav-link" href="#kontak">Kontak</a>
                     </li>
                 </ul>
+                <select id="language-selector" class="form-select w-auto">
+                    <option value="en">English</option>
+                    <option value="id">Bahasa Indonesia</option>
+                </select>
             </div>
         </div>
     </nav>
@@ -546,6 +550,39 @@
             requestId = requestAnimationFrame(updateScroller);
         }
     }
+</script>
+<script>
+    const translations = {
+        en: {
+            "nav-home": "Home",
+            "nav-about": "About",
+            "nav-contact": "Contact",
+            "home-title": "Welcome to My Website",
+            "home-text": "This is a simple multi-language website example.",
+            "about-title": "About Us",
+            "about-text": "We provide the best service for you.",
+            "contact-title": "Contact",
+            "contact-text": "Feel free to reach out to us anytime."
+        },
+        id: {
+            "nav-home": "Beranda",
+            "nav-about": "Tentang",
+            "nav-contact": "Kontak",
+            "home-title": "Selamat Datang di Website Kami",
+            "home-text": "Ini adalah contoh website multi-bahasa sederhana.",
+            "about-title": "Tentang Kami",
+            "about-text": "Kami menyediakan layanan terbaik untuk Anda.",
+            "contact-title": "Kontak",
+            "contact-text": "Jangan ragu untuk menghubungi kami kapan saja."
+        }
+    };
+
+    document.getElementById('language-selector').addEventListener('change', function() {
+        const selectedLang = this.value;
+        for (const key in translations[selectedLang]) {
+            document.getElementById(key).textContent = translations[selectedLang][key];
+        }
+    });
 </script>
 
 </html>
