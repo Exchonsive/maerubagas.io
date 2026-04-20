@@ -325,36 +325,51 @@ footer {
 .overlay {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.overlay:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3), 0 0 20px rgba(20, 136, 204, 0.5);
+  transform: translateY(-10px);
 }
 
 .image_portofolio {
-  border-radius: 7px;
+  border-radius: 15px;
   max-width: 100%;
-  filter: blur(0) brightness(100%);
-  transform: scale(1);
-  transition: filter 0.5s ease, transform 0.5s ease;
+  filter: blur(0) brightness(100%) saturate(1);
+  transform: scale(1) rotate(0deg);
+  transition: filter 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .overlay:hover .image_portofolio {
-  filter: blur(3px) brightness(55%);
-  transform: scale(1.1);
+  filter: blur(2px) brightness(70%) saturate(1.2);
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .overlay-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 85%;
+  width: 90%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 .overlay:hover .overlay-text {
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 
